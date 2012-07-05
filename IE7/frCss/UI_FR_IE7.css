@@ -1,0 +1,239 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*********************** Global *****************************/
+body{font-size:12px; color: #666; font-family: Arial, Helvetica, sans-serif;}
+
+*{
+	padding:0; margin:0;
+}
+
+a{
+	CURSOR: pointer; COLOR: #007f64; TEXT-DECORATION: underline
+}
+
+#AppBg{
+	background:url("../images/BrandShapes.png") 50% 100% no-repeat;
+}
+
+/*********************** Application *****************************/
+
+#AppHead h1{float:left}
+
+#AppHead h1 a{width:228px;height:37px;display:block;background:url("../images/logo_produit.png") top left no-repeat}
+
+#AppHead h1 span{display:none}
+
+#AppContainer{
+	margin:0 auto;
+	width:960px;
+	padding-top:20px;
+}
+
+#AppOptions{ width:auto; float:right; margin-right:30px;}
+
+#AppOptions a{float:left; width:auto; height:20px; display:block; color:#999; text-decoration:none}
+
+#AppOptions span img{border:none; background:url("../images/icons/ico_20x20.png") no-repeat; margin-right:10px; vertical-align:middle; width:20px; height:20px; cursor:pointer}
+
+#AppOptions span{vertical-align:middle; cursor:pointer; }
+
+#AppOptions a:hover{color:#666}
+
+
+#AppBody{zoom:1;margin-top:10px;}
+
+#AppBody .PageContainer{zoom:1; top:43px; position:relative;  background:url("../images/IELG/PageBg.png") 50% top repeat-y; z-index:2}
+
+#AppBody .PageContainer .PageContainerTop{zoom:1; min-height:295px; margin-top:-35px; padding-top:10px; background:url("../images/IELG/PageHead.png") 50% top no-repeat;}
+
+#AppBody .PageContainerBottom{height:60px; margin-top:43px; background:url("../images/IELG/PageFoot.png") 50% bottom no-repeat; margin-bottom:20px}
+
+
+#PageHead {padding:25px 25px 0 25px; padding-bottom:0px !important}
+
+
+#PageInfo h2{font-weight:normal; font-size:2em; color:#007f64; font-family: Arial; padding-bottom:10px;}
+
+
+#PageBody{padding:0 25px; margin:0;}
+
+#PageBody h3{font-weight: normal; font-size:16px; margin-bottom:10px; color:#91c966}
+
+#PageBody p{margin:5px 0px;}
+
+
+#AppFoot{height:38px; background:url("../images/SageLogo.png") 100% 50% no-repeat; margin-right:15px}
+
+/*********************** Layout *****************************/
+
+.left{float:left}
+.right{float:right}
+.clr{clear:both;font-size:1px;height:1px;width:1px;zoom:0}
+
+.twocols{width:45%;}
+.threecols{width:28%; margin-right:15px}
+
+.decalLeft{margin-left:25px;}
+.decalRight{margin-right:25px;}
+
+/*********************** Textes *****************************/
+
+.applegreen { color:#168304;}
+.green { color:#007F64;}
+.blue { color:#169A98;}
+.brown { color:#D37423;}
+
+h1{ font-size:2.4em;}
+h2{ font-size:2em;}
+h3{ font-size:1.6em;}
+h4{ font-size:1.2em;}
+h5{ font-size:1em;}
+h6{ font-size:1em;}
+
+/*********************** Boutons *****************************/
+
+/* Primary Actions */
+
+.Button{padding:5px 10px; width:auto}
+
+.Button,.Button *{cursor:pointer}
+
+.Button input{background:none;border:none;padding:0;margin:0}
+
+.Button.Primary{border:2px solid #ffffff !important;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:13px;font-weight:bold;color:white;text-decoration:none;border:none !important;display:block;padding:0 0 0 10px;margin-right:10px;zoom:1}
+
+.Button.Primary .action-label{height:26px}
+
+.Button.Primary, .Button.Primary .action-label{background:url("../images/buttons/PrimaryActionIE.png") 0 0 no-repeat;}
+
+.Button.Primary .action-label{display:block;color:white !important;border:none;text-align:left;background-position:100% 0;overflow:visible;margin-right:-10px;padding:8px 10px 0 0 !important;zoom:1}
+
+.Button.Primary .action-label input{position:relative;top:-2px;padding:0 0.25em;margin-right:10px;overflow:visible}
+
+.Button.Primary .action-label strong{width:auto;}
+
+.Button.Primary:hover{background-position:0 100%}
+
+.Button.Primary:hover .action-label{background-position:100% 100%}
+
+/* Secondary Actions */
+
+.Button.Secondary{font-weight:normal; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:13px; font-weight:bold; color:#007f64; text-decoration:none; border:none !important;display:block; padding:0 0 0 10px; margin-right:10px; margin-top:1px; zoom:1}
+
+.Button.Secondary .action-label{height:24px}
+
+.Button.Secondary,.Button.Secondary .action-label{background:url("../images/buttons/SecondaryActionIE.png") 0 0 no-repeat;}
+
+.Button.Secondary .action-label{display:block;color:#007f64;border:none;text-align:left;background-position:100% 0;overflow:visible;margin-right:-10px;padding:8px 10px 0 0 !important;zoom:1}
+
+.Button.Secondary .action-label input{position:relative;top:-2px;padding:0 0.25em;margin-right:10px;overflow:visible}
+
+.Button.Secondary:hover{background-position:0 100%; color:#007f64;}
+
+.Button.Secondary:hover .action-label{background-position:100% 100%; color:#007f64;}
+
+
+.SettingsList{padding-top:20px; list-style-type:none;}
+
+.SettingsList a{display:block; font-size:14px; color:#333333; text-decoration:none; background-color:#f3f3f3; padding:10px 15px; margin-bottom:10px; zoom:1}
+
+.SettingsList a:hover{background-color:#e8f6cf}
+
+/*********************** Encadrements *****************************/
+
+/* origine : .SummaryPod */
+.cadre {
+	background-color: white;
+    border: 1px solid #C2C2C2;
+    border-radius: 15px 15px 15px 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+/* origine : #IncomeSummary */
+.applegreenBorder {border: 2px solid #9CC110}
+/* origine : #VATReturns */
+.greenBorder {border: 2px solid #169A98;}
+/* origine : #ExpenseSummary */
+.blueBorder {border: 2px solid #006699;}
+
+/* origine : #AppOptions */
+.cadreInner{
+	padding-left:30px;
+	background:url("../images/LinearBoxLrgBg.png") no-repeat;
+	float:left;
+}
+
+/* origine : .inner quelques ajouts */
+.inner{
+    padding: 14px 30px 14px 0px;
+	zoom:1;
+	margin-right:-30px;
+	background:url("../images/LinearBoxLrgBg.png") no-repeat 100% -48px;
+}
+
+.cadreInner a{
+	width:auto;
+	display:block;
+	float:left;
+	height:auto;
+	text-decoration:none;
+	color:#999;
+	cursor:pointer;
+}
+
+.cadreInner a span{
+	vertical-align:top;
+}
+
+.cadreInner .vr{
+	width:28px;
+	height:20px;
+	float:left;
+	display:block;
+	background:url("../images/AppOptionsVr.gif") repeat-y 50% 0%;
+}
+
+/************************* Onglets **********************************/
+
+.AppTab{position:relative;z-index:1;vertical-align:top;margin:0 0 -150px -1px;padding-bottom:15px;display:inline;background:url("../images/IELG/AppTab_inner_Off.png") 50% 0% no-repeat; zoom:1}
+
+.AppTab .TabFace span{cursor:pointer; padding-right:20px}
+
+.AppTab .TabFace span img{background-image:url("../images/icons/ico_20x20.png"); margin-right:10px; vertical-align:middle; cursor:pointer}
+
+.AppTab ul{background:url("../images/IELG/AppTab_ul_Off.png") 50% 100% no-repeat;width:159px;padding-bottom:15px}
+
+.AppTab.first{margin-left:5px;background:url("../images/IELG/AppTab_lt_Off.png") 50% 0% no-repeat}
+
+.AppTab.last{margin-right:-5px;background:url("../images/IELG/AppTab_rt_Off.png") 50% 0% no-repeat}
+
+.AppTab .TabFace{width:159px;display:block;color:#666666;font-weight:bold;text-align:center;text-decoration:none;padding:5px 0}
+
+.AppTab ul{display:none}
+
+.AppTab ul li{text-align:center;display:block;padding:4px 2px}
+
+.AppTab ul li a{display:block;text-decoration:none;display:block;padding:2px}
+
+.AppTab ul li a:hover{background:url("../images/AppTabs_DD_LinkBg.png") 50% 0% repeat-y;text-decoration:underline}
+
+/************************ Icônes **************************************/
+
+/* Ceci n'est qu'un exemple, vous pouvez utiliser la nomenclature que vous souhaitez */
+#ico-graph span img{ background-position:0 0;}
+
+#ico-graph:hover span img{ background-position:0 -20px;}
+
+#ico-hour span img{background-position:-360px 0;}
+
+#ico-hour:hover span img{background-position:-360px -20px;}
+
+#ico-money span img{background-position:-20px 0;}
+
+#ico-money:hover span img{background-position:-20px -20px;}
+
+#ico-help span img{background-position:-260px 0px;}
+
+#ico-help:hover span img{background-position:-260px -20px}
